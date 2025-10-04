@@ -83,13 +83,13 @@
 
             <!-- TWO - About -->
             <section id="two" class="h-auto md:h-screen flex items-center justify-center mt-4 mb-9 md:mt-0">
-                <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[80%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center md:flex-row md:px-8">
+                <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center md:flex-row md:px-8">
                     <div>
                         <img src="./images/yo(2).png" class="h-52 w-52 md:h-[480px] md:w-[480px] rounded-2xl pb-2" alt="Ibraim Gonzalez">
                     </div>
-                    <div class="text-center px-4 md:w-[40%] md:text-left text-slate-900 md:mb-9">
-                        <h2 class="text-2xl md:text-6xl md:mb-4 font-bold drop-shadow-lg">Acerca de mí</h2>
-                        <p class="text-slate-900 font-bold drop-shadow-lg text-sm md:text-xl">Actualmente estudio para ser Desarrollador Full-Stack.
+                    <div class="text-center px-4 md:w-[40%] md:text-left text-slate-900 md:mb-28">
+                        <h2 class="text-2xl md:text-3xl md:mb-2 font-bold drop-shadow-lg">Sobre mí</h2>
+                        <p class="text-slate-900 font-bold drop-shadow-lg text-sm md:text-lg">Actualmente estudio para ser Desarrollador Full-Stack.
                             Me gusta crear interfaces claras y rápidas con JavaScript, 
                             cuidando pruebas, rendimiento y buen diseño. 
                             Soy apasionado de los videojuegos y esa atención al detalle la llevo a mi código. 
@@ -102,7 +102,7 @@
 
             <!-- THREE - Skills -->
             <section id="three" class="h-auto md:h-screen flex items-center justify-center mb-9 md:mt-0">
-                <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[80%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
+                <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
                     <h2 class="text-2xl md:text-6xl md:mb-8 pb-6 font-bold drop-shadow-md">Habilidades</h2>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 md:gap-12">
                         <div class="bg-[url(./images/fruta1.png)] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 bg-contain bg-no-repeat bg-center hover:bg-[url(./images/html.png)]"></div> 
@@ -117,7 +117,7 @@
 
             <!-- FOUR - Projects -->
             <section id="four" class="h-auto md:h-screen flex items-center justify-center mb-9 md:mt-0">
-                <div class="min-h-[70vh] md:min-h-[80vh] w-[92%] md:w-[80%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
+                <div class="min-h-[70vh] md:min-h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
                     <h2 class="text-2xl md:text-6xl md:mb-8 pb-6 font-bold drop-shadow-md">Proyectos</h2>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:px-4 md:gap-10">
                         <a href="https://wdd330anirealm.netlify.app" target="_blank" class="block transform hover:scale-105 transition duration-200">
@@ -138,7 +138,7 @@
 
             <!-- FIVE - Contact -->
             <section id="five" class="h-auto md:h-screen flex items-center justify-center mb-9 md:mb-0 md:mt-0">
-                <div class="min-h-[70vh] md:min-h-[80vh] w-[92%] md:w-[80%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
+                <div class="min-h-[70vh] md:min-h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
                     <h2 class="text-2xl md:text-6xl md:mb-8 pb-6 font-bold drop-shadow-md">Contáctame</h2>
                     <div class="relative w-[92%] md:w-[60%] bg-white text-slate-900 rounded-2xl border-4 border-blue-950 p-4 md:p-8 pt-8 md:pt-10 shadow-xl">
                         <img src="./images/luffy.png" alt="DenDenMushi" class="absolute top-0 md:-top-7 left-0 w-12 h-12 md:w-24 md:h-24">
@@ -149,10 +149,20 @@
                             <input type="text" placeholder="Nombre" class="p-2 rounded border-2 border-blue-950">
                             <input type="email" placeholder="Correo" class="p-2 rounded border-2 border-blue-950">
                             <textarea placeholder="Mensaje" class="p-2 rounded border-2 border-blue-950 h-24"></textarea>
-                            <button type="submit" class="bg-blue-950 text-white font-bold py-2 rounded hover:bg-blue-800 md:w-40 md:mx-auto">
+                            <button
+                            type="submit"
+                                class="bg-yellow-950 text-yellow-400 border border-yellow-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md 
+                                        hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 
+                                        outline-none duration-300 group w-full md:w-40 md:mx-auto"
+                                >
+                                <span
+                                    class="bg-yellow-400 shadow-yellow-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 
+                                        group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"
+                                ></span>
                                 Enviar
-                            </button>
-                            <img src="./images/golden.png" alt="DenDenMushi" class="w-24 h-24 mx-auto">
+                                </button>
+                            <img src="./images/golden.png" alt="DenDenMushi" class="w-24 h-24 mx-auto -mt-5">
+
                         </form>
                     </div>
                 </div>
