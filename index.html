@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="todo">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +7,31 @@
     <title>Portafolio Ibraim Gonzalez</title>
 </head>
 
-<body class="min-h-screen bg-[#0D1117] text-white bg-[url('./images/bodybg.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed">
-    
+<body class="min-h-screen bg-[#0D1117] text-white bg-[url('./images/bodybg.jpeg')] dark:bg-[url('./images/walldarkmode.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+    <!-- Botón Dark Mode global -->
+    <div class="fixed top-4 right-4 z-[100] scale-75 md:scale-90">
+        <label class="relative inline-flex items-center cursor-pointer">
+            <input id="btn-dark" class="sr-only peer" type="checkbox" />
+            <div
+            class="w-16 h-8 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden
+                    before:flex before:items-center before:justify-center
+                    after:flex after:items-center after:justify-center
+                    before:content-['☀️'] before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white
+                    before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700
+                    peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full
+                    shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700
+                    peer-checked:bg-[#383838]
+                    after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[2px]
+                    after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0
+                    after:transition-all after:duration-700 peer-checked:after:opacity-100
+                    peer-checked:after:rotate-180 peer-checked:after:translate-y-0">
+            </div>
+        </label>
+    </div>
     <!-- Layout -->
     <div class="md:flex">
-
         <!-- Aside -->
-        <aside class="bg-[#0D1117] w-full md:w-[15%] h-auto md:h-screen p-3 md:p-5 text-white flex flex-col justify-center items-center md:text-xl sticky top-0 z-50">
+        <aside class="dark:bg-[#0D1117] bg-[#161B22] w-full md:w-[15%] h-auto md:h-screen p-3 md:p-5 text-white flex flex-col justify-center items-center md:text-xl sticky top-0 z-50">
             <!-- Logo -->
             <div class="logo mb-1 md:mb-6">
                 <img src="./images/logo2.png" alt="Logo" class="w-30 h-30 md:w-auto md:h-auto">
@@ -83,13 +101,13 @@
 
             <!-- TWO - About -->
             <section id="two" class="h-auto md:h-screen flex items-center justify-center mt-4 mb-9 md:mt-0">
-                <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center md:flex-row md:px-8">
+                <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] dark:bg-[url(./images/darkmode.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center md:flex-row md:px-8">
                     <div>
                         <img src="./images/yo(2).png" class="h-52 w-52 md:h-96 md:w-96 rounded-2xl pb-2" alt="Ibraim Gonzalez">
                     </div>
-                    <div class="text-center px-4 md:text-left text-slate-900 md:mb-20">
+                    <div class="text-center px-4 md:text-left text-slate-900 dark:text-white md:mb-20">
                         <h2 class="text-2xl md:text-3xl md:mb-2 font-bold drop-shadow-lg">Sobre mí</h2>
-                        <p class="text-slate-900 font-bold drop-shadow-lg text-sm md:text-lg">Actualmente estudio para ser Desarrollador Full-Stack.<br />
+                        <p class="text-slate-900 dark:text-white font-bold drop-shadow-lg text-sm md:text-lg">Actualmente estudio para ser Desarrollador Full-Stack.<br />
                             Me gusta crear interfaces claras y rápidas con JavaScript,<br /> 
                             cuidando pruebas, rendimiento y buen diseño.<br /> 
                             Soy apasionado de los videojuegos<br />
@@ -103,7 +121,7 @@
 
             <!-- THREE - Skills -->
             <section id="three" class="h-auto md:h-screen flex items-center justify-center mb-9 md:mt-0">
-                <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
+                <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] dark:bg-[url(./images/darkmode.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
                     <h2 class="text-2xl md:text-6xl md:mb-8 pb-6 font-bold drop-shadow-md">Habilidades</h2>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 md:gap-12">
                         <div class="bg-[url(./images/fruta1.png)] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 bg-contain bg-no-repeat bg-center hover:bg-[url(./images/html.png)]"></div> 
@@ -118,7 +136,7 @@
 
             <!-- FOUR - Projects -->
             <section id="four" class="h-auto md:h-screen flex items-center justify-center mb-9 md:mt-0">
-                <div class="min-h-[70vh] md:min-h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
+                <div class="min-h-[70vh] md:min-h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] dark:bg-[url(./images/darkmode.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
                     <h2 class="text-2xl md:text-6xl md:mb-8 pb-6 font-bold drop-shadow-md">Proyectos</h2>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:px-4 md:gap-10">
                         <a href="https://wdd330anirealm.netlify.app" target="_blank" class="block transform hover:scale-105 transition duration-200">
@@ -139,9 +157,9 @@
 
             <!-- FIVE - Contact -->
             <section id="five" class="h-auto md:h-screen flex items-center justify-center mb-9 md:mb-0 md:mt-0">
-                <div class="min-h-[70vh] md:min-h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
+                <div class="min-h-[70vh] md:min-h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] dark:bg-[url(./images/darkmode.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
                     <h2 class="text-2xl md:text-6xl md:mb-8 pb-6 font-bold drop-shadow-md">Contáctame</h2>
-                    <div class="relative w-[92%] md:w-[60%] bg-white text-slate-900 rounded-2xl border-4 border-blue-950 p-4 md:p-8 pt-8 md:pt-10 shadow-xl">
+                    <div class="relative w-[92%] md:w-[60%] bg-white dark:bg-[#1a1f2b] text-slate-900 dark:text-white rounded-2xl border-4 border-blue-950 p-4 md:p-8 pt-8 md:pt-10 shadow-xl">
                         <img src="./images/luffy.png" alt="DenDenMushi" class="absolute top-0 md:-top-7 left-0 w-12 h-12 md:w-24 md:h-24">
                         <img src="./images/ace.png" alt="DenDenMushi" class="absolute top-0 md:-top-7 right-0 w-12 h-12 md:w-24 md:h-24">
                         <img src="./images/law.png" alt="DenDenMushi" class="absolute bottom-0 left-0 w-12 h-12 md:w-24 md:h-24">
@@ -171,5 +189,12 @@
 
         </main>
     </div>
+    <script>
+        let botondark = document.querySelector("#btn-dark");
+        let todo = document.querySelector("#todo");
+        botondark.addEventListener("click", function () {
+            todo.classList.toggle("dark");
+        });
+    </script>
 </body>
 </html>
