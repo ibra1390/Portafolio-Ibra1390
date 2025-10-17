@@ -34,11 +34,22 @@ const habilidades = [
 function mostrarHabilidades() {
   let skills = document.querySelector("#skills");
   habilidades.forEach((habilidad) => {
-  skills.innerHTML += `<div class="bg-[url(${habilidad.fruta})] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 
-                          bg-contain bg-no-repeat bg-center 
-                          hover:bg-[url(${habilidad.icono})]">
-                      </div>`;
-                    });
+    let elementoHabilidad = document.createElement("div");
+    elementoHabilidad.classList.add("h-32", "w-32", "sm:h-40", "sm:w-40", "md:h-52", "md:w-52", 
+                          "bg-contain", "bg-no-repeat", "bg-center", "cursor-pointer");
+    
+    elementoHabilidad.style.backgroundImage = `url(${habilidad.fruta})`;
+
+    elementoHabilidad.addEventListener("click", ()=> {
+      if (elementoHabilidad.style.backgroundImage.includes(habilidad.fruta)) {
+        elementoHabilidad.style.backgroundImage = `url(${habilidad.icono})`;
+      } else {
+        elementoHabilidad.style.backgroundImage = `url(${habilidad.fruta})`;
+      }
+    });
+
+    skills.append(elementoHabilidad);
+  });
 }
 
 export {mostrarHabilidades};
