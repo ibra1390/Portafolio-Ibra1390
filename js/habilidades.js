@@ -36,7 +36,7 @@ function mostrarHabilidades() {
   habilidades.forEach((habilidad) => {
     let elementoHabilidad = document.createElement("div");
     elementoHabilidad.classList.add("h-32", "w-32", "sm:h-40", "sm:w-40", "md:h-52", "md:w-52", 
-                          "bg-contain", "bg-no-repeat", "bg-center", "cursor-pointer");
+                          "bg-contain", "bg-no-repeat", "bg-center", "cursor-pointer", "duration-500", "ease-out", "hover:scale-105");
     
     elementoHabilidad.style.backgroundImage = `url(${habilidad.fruta})`;
 
