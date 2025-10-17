@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/main.js" defer type="module"></script>
     <link rel="stylesheet" href="./output.css">
+    <script src="./js/main.js" defer type="module"></script>
     <title>Portafolio Ibraim Gonzalez</title>
 </head>
 
@@ -133,13 +133,8 @@
             <section id="three" class="h-auto md:h-screen flex items-center justify-center mb-9 md:mt-0">
                 <div class="min-h-[70vh] md:h-[80vh] w-[92%] md:w-[70%] container bg-[url(./images/section.png)] dark:bg-[url(./images/darkmode.png)] bg-cover bg-center bg-no-repeat rounded-2xl border-6 border-blue-950  flex flex-col items-center justify-center">
                     <h2 class="text-2xl md:text-6xl md:mb-8 pb-6 font-bold drop-shadow-md">Habilidades</h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 md:gap-12">
-                        <div class="bg-[url(./images/fruta1.png)] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 bg-contain bg-no-repeat bg-center hover:bg-[url(./images/html.png)]"></div> 
-                        <div class="bg-[url(./images/fruta2.png)] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 bg-contain bg-no-repeat bg-center hover:bg-[url(./images/css.png)]"></div>
-                        <div class="bg-[url(./images/fruta4.png)] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 bg-contain bg-no-repeat bg-center hover:bg-[url(./images/js.png)]"></div>
-                        <div class="bg-[url(./images/fruta5.png)] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 bg-contain bg-no-repeat bg-center hover:bg-[url(./images/git.png)]"></div>
-                        <div class="bg-[url(./images/fruta6.png)] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 bg-contain bg-no-repeat bg-center hover:bg-[url(./images/tailwind.png)]"></div>
-                        <div class="bg-[url(./images/fruta3.png)] h-32 w-32 sm:h-40 sm:w-40 md:h-52 md:w-52 bg-contain bg-no-repeat bg-center hover:bg-[url(./images/mysql.png)]"></div> 
+                    <div id="skills" class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 md:gap-12">
+                        <!--Carga dinamica a traves de habilidades.js-->
                     </div>
                 </div>
             </section>
@@ -162,6 +157,12 @@
                             <img src="./images/epic.png" alt="Proyecto 4" class="w-32 h-auto md:w-60 rounded-lg shadow-lg">
                         </a>
                     </div>
+                    <a href="./proyectos.html" class="flex flex-col items-center mt-2 md:mt-10">
+                        <img src="./images/namiwanted.png" alt="proyectos">
+                        <p class="text-center text-white md:text-black font-bold text-sm md:text-lg mb-3 cursor-pointer">
+                            Haz click para ver más proyectos
+                        </p>
+                    </a>
                 </div>
             </section>
 
