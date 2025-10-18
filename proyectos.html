@@ -9,6 +9,7 @@
 </head>
 
 <body class="min-h-screen bg-[#0D1117] text-white bg-[url('./images/marine.jpg')] dark:bg-[url('./images/marinedark.png')] bg-cover bg-center bg-no-repeat bg-fixed">
+    <div class="fixed inset-0 bg-white/20 dark:bg-black/5 z-[-1]"></div>
     <!-- Botón Dark Mode -->
     <div class="fixed top-5 right-3 z-[100] scale-70 md:scale-90">
         <label class="relative inline-flex items-center cursor-pointer">
@@ -93,11 +94,17 @@
                 </ul>
             </div>
         </aside>
-        <main class="relative w-full flex flex-col items-center justify-center">
-            <div class="relative w-48 md:w-64 h-48 md:mt-16 bg-[url('./images/proyectos2.png')] dark:bg-[url('./images/proyectosdark.png')] bg-contain bg-no-repeat bg-center"></div>
-            <!-- Contenedor de las cards -->
-            <div id="proyectos-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-4 md:px-12 max-w-6xl mt-6 md:mt-10">
+        <main class="flex flex-col min-h-screen w-full">
+            <div class="flex flex-col items-center justify-center">
+                <div class="relative w-48 md:w-64 h-48 md:mt-16 bg-[url('./images/proyectos2.png')] dark:bg-[url('./images/proyectosdark.png')] bg-contain bg-no-repeat bg-center">       
+                </div>
+                <!-- Contenedor de las cards -->
+                <div id="proyectos-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-4 md:px-12 max-w-6xl mt-6 md:mt-10">
+                </div>
             </div>
+            <footer class="flex items-center justify-center md:py6">
+                    <img src="./images/hat.png" class="h-24 md:h-32" alt="sombrero">
+            </footer>
         </main>
     </div>
 </body>
