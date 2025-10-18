@@ -20,12 +20,36 @@ burger.addEventListener("change", () => {
   }
 });
 
+
+/* ENVIAR FORMULARIO A CORREO */
+let form = document.querySelector("#formulario");
+if (form) {
+  form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let datos = new FormData(form);
+
+  let nombre = datos.get("nombre");
+  let email = datos.get("email");
+  let mensaje = datos.get("mensaje");
+
+  let confirmacion = `Gracias por tu mensaje ${nombre}! Me comunicaré contigo pronto :)`;
+  alert(confirmacion);
+  form.reset();
+  console.log(`${nombre} con email ${email} envió el siguiente mensaje: ${mensaje}`);
+});
+}
+
 /* IMPORTAR FUNCION DE HABILIDADES */
 document.addEventListener("DOMContentLoaded", () => {
-  mostrarHabilidades();
+  if (document.querySelector("#skills")) {
+    mostrarHabilidades();
+  }
 });
 
 /* IMPORTAR FUNCION DE PROYECTOS */
 document.addEventListener("DOMContentLoaded", () => {
-  mostrarProyectos();
+  if (document.querySelector("#proyectos-container")) {
+    mostrarProyectos();
+  }
 });
+
