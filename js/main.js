@@ -2,10 +2,25 @@ import { mostrarHabilidades} from "./habilidades.js";
 import { mostrarProyectos } from "./proyectos.js";
 
 /* DARK MODE */
-let botondark = document.querySelector("#btn-dark");
+let darkButton = document.querySelector("#btn-dark");
 let todo = document.querySelector("#todo");
-botondark.addEventListener("click", function () {
-todo.classList.toggle("dark");
+
+let currentTheme = localStorage.getItem("theme");
+if (currentTheme === "dark") {
+    todo.classList.add("dark");
+    darkButton.checked = true;
+}
+    
+darkButton.addEventListener("click", () => {
+  todo.classList.toggle("dark");
+
+  if (todo.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      darkButton.checked = true;
+  } else {
+      localStorage.setItem("theme", "light");
+      darkButton.checked = false;
+  }
 });
    
 /* MENU ANVORGESA */
